@@ -1,0 +1,11 @@
+nav(id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top"): div(class="container")
+    a(class="navbar-brand" href="/"): strong= title
+    button(class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"): span(class="navbar-toggler-icon")
+    div(class="navbar-collapse collapse" id="navbarColor02" style="")
+        ul(class="navbar-nav mr-auto d-flex align-items-center")
+            li(class="nav-item"): a(class="nav-link" href="/") Home
+            li(class="nav-item"): a(class="nav-link" href="/p/contact") Contact
+            li(class="nav-item"): a(class="nav-link" href="/p/privacy") Privacy Policy
+            li(class="nav-item"): a(class="nav-link" href="/p/terms") Terms Of Use
+        ul(class="navbar-nav ml-auto d-flex align-items-center")
+            form(class="bd-search hidden-sm-down" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);"): input(type="text" class="form-control text-small"  id="lunrsearch" name="q" value="" placeholder="Type keyword and enter...")
