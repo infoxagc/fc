@@ -3,7 +3,7 @@
   functions = "functions"
 
 [functions]
-  included_files = ["assets/*","views/*","server/*","*"]
+  included_files = ["assets/*","views/*","*"]
 
 [[redirects]]
   from = "/*"
