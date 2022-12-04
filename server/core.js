@@ -4,6 +4,7 @@ const fs = require("fs");
 
 const app = express();
 app.use("/assets", express.static("assets"));
+app.engine("pug", require("pug").__express);
 app.set("view engine", "pug");
 app.disable("x-powered-by");
 app.enable("trust proxy");
